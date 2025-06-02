@@ -40,5 +40,6 @@ declare const _default: {
     getMsTime: typeof getMsTime;
     convertISO8601StringToDate: (data: string) => Date;
     formatISO8601StringToDate: (data: Date) => string;
+    container: Map<string, any>;
 };
 export default _default;

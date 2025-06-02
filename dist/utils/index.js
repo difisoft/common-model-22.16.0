@@ -1,10 +1,14 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 const validation_1 = require("./validation");
 const date_1 = require("./date");
 const object_1 = require("./object");
 const math_1 = require("./math");
 const array_1 = require("./array");
+const containers_1 = __importDefault(require("./containers"));
 const config_1 = require("./config");
 const mstime_1 = require("./mstime");
 exports.default = {
@@ -45,5 +49,6 @@ exports.default = {
     getMsTime: mstime_1.getMsTime,
     convertISO8601StringToDate: date_1.convertISO8601StringToDate,
     formatISO8601StringToDate: date_1.formatISO8601StringToDate,
+    container: containers_1.default,
 };
 //# sourceMappingURL=index.js.map

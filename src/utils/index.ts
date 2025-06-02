@@ -74,4 +74,5 @@ export default {
   getMsTime,
   convertISO8601StringToDate,
   formatISO8601StringToDate,
+  container,
 };
