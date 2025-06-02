@@ -33,11 +33,13 @@ var __importStar = (this && this.__importStar) || (function () {
     };
 })();
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.logger = exports.Utils = exports.Errors = void 0;
+exports.Models = exports.logger = exports.Utils = exports.Errors = void 0;
 const log_1 = require("@/log/");
 Object.defineProperty(exports, "logger", { enumerable: true, get: function () { return log_1.logger; } });
 const Errors = __importStar(require("@/errors"));
 exports.Errors = Errors;
 const Utils = __importStar(require("@/utils"));
 exports.Utils = Utils;
+const Models = __importStar(require("@/models"));
+exports.Models = Models;
 //# sourceMappingURL=index.js.map

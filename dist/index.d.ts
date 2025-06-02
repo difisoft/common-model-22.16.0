@@ -1,4 +1,5 @@
 import { logger } from '@/log/';
 import * as Errors from '@/errors';
 import * as Utils from '@/utils';
-export { Errors, Utils, logger };
+import * as Models from '@/models';
+export { Errors, Utils, logger, Models };
