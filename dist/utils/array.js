@@ -16,7 +16,8 @@ const removeDuplicateObj = (arr, fieldName) => {
     if (arr === null || arr === undefined || fieldName === null || fieldName === undefined) {
         return [];
     }
-    return arr.map((value) => value[fieldName])
+    return (arr
+        .map((value) => value[fieldName])
         // store the keys of the unique objects
         .map((currentValue, currentIndex, currentArr) => {
         if (currentArr.indexOf(currentValue) === currentIndex) {
@@ -27,7 +28,8 @@ const removeDuplicateObj = (arr, fieldName) => {
         }
     })
         // map unique key -> object
-        .filter((value) => value !== -1).map((value) => arr[value]);
+        .filter((value) => value !== -1)
+        .map((value) => arr[value]));
 };
 exports.removeDuplicateObj = removeDuplicateObj;
 //# sourceMappingURL=array.js.map

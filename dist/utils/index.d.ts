@@ -1,7 +1,7 @@
-import { createFailFromError, createFailValidation, createSuccessValidation, validate, Validate, validateEmail, validatePassword } from "./validation";
-import { setObjKey } from "./object";
-import { getEnvArr, getEnvJson, getEnvNum, getEnvStr, getEnvBool } from "./config";
-import { diffMsTime, getMsTime } from "./mstime";
+import { createFailFromError, createFailValidation, createSuccessValidation, validate, Validate, validateEmail, validatePassword } from './validation';
+import { setObjKey } from './object';
+import { getEnvArr, getEnvJson, getEnvNum, getEnvStr, getEnvBool } from './config';
+import { diffMsTime, getMsTime } from './mstime';
 declare const _default: {
     validate: typeof validate;
     validateEmail: typeof validateEmail;

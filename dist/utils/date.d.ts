@@ -16,4 +16,4 @@ declare const getEndOfWeek: (date: Date) => Date;
 declare const getStartOfMonth: (date: Date) => Date;
 declare const getEndOfMonth: (date: Date) => Date;
 declare const countDaysOfAYear: (year: number) => number;
-export { formatDateToDisplay, convertStringToDate, MINUTE_DATE_DISPLAY_FORMAT, DATETIME_DISPLAY_FORMAT, DATE_DISPLAY_FORMAT, TIME_DISPLAY_FORMAT, compareDateOnly, getEndOfDate, getStartOfDate, countDayBetween, countDaysOfAYear, getStartOfWeek, getEndOfWeek, getStartOfMonth, getEndOfMonth, convertISO8601StringToDate, formatISO8601StringToDate, isWeekend };
+export { formatDateToDisplay, convertStringToDate, MINUTE_DATE_DISPLAY_FORMAT, DATETIME_DISPLAY_FORMAT, DATE_DISPLAY_FORMAT, TIME_DISPLAY_FORMAT, compareDateOnly, getEndOfDate, getStartOfDate, countDayBetween, countDaysOfAYear, getStartOfWeek, getEndOfWeek, getStartOfMonth, getEndOfMonth, convertISO8601StringToDate, formatISO8601StringToDate, isWeekend, };

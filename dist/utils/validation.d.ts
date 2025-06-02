@@ -29,4 +29,4 @@ export declare class Validate<T> {
 declare function validate<T>(fieldValue: T, fieldName: string): Validate<T>;
 declare function validateEmail(fieldValue: string, paramName?: string): IValidationResult<string>;
 declare function validatePassword(fieldValue: string, paramName?: string, regex?: string): IValidationResult<string>;
-export { validate, validateEmail, createFailValidation, createFailFromError, createSuccessValidation, validatePassword };
+export { validate, validateEmail, createFailValidation, createFailFromError, createSuccessValidation, validatePassword, };

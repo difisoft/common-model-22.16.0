@@ -17,23 +17,25 @@ const InvalidFieldValueError_1 = __importDefault(require("@/errors/InvalidFieldV
 function createFailValidation(code, messageParams, paramName) {
     return {
         success: false,
-        params: [{
+        params: [
+            {
                 code: code,
                 messageParams: messageParams,
-                param: paramName
-            }]
+                param: paramName,
+            },
+        ],
     };
 }
 function createFailFromError(error) {
     return {
         success: false,
-        params: error.params
+        params: error.params,
     };
 }
 function createSuccessValidation(data) {
     return {
         success: true,
-        data: data
+        data: data,
     };
 }
 const INVALID_VALUE = 'INVALID_VALUE';
@@ -50,7 +52,6 @@ class Validate {
         this.isRequired = true;
         return this;
     }
-    ;
     setIsFetchCount() {
         this.isFetchCount = true;
         return this;
@@ -59,7 +60,6 @@ class Validate {
         this.checks.push(func);
         return this;
     }
-    ;
     addCheck(func, code, messageParams, paramName) {
         this.checks.push((value, name) => {
             if (func(value, name)) {
@@ -69,12 +69,10 @@ class Validate {
         });
         return this;
     }
-    ;
     adds(funcs) {
         this.checks = this.checks.concat(funcs);
         return this;
     }
-    ;
     throwValid(invalidParameterError) {
         const result = this.valid();
         if (result && !result.success) {
@@ -86,7 +84,6 @@ class Validate {
             }
         }
     }
-    ;
     valid() {
         let result = createSuccessValidation(this.fieldValue);
         if (this.isRequired) {
@@ -111,7 +108,6 @@ class Validate {
         }
         return result;
     }
-    ;
     checkGt(minPrice) {
         this.checks.push((fieldValue, fieldName) => {
             if (fieldValue < minPrice) {
@@ -123,7 +119,6 @@ class Validate {
         });
         return this;
     }
-    ;
 }
 exports.Validate = Validate;
 function validate(fieldValue, fieldName) {

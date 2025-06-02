@@ -1,4 +1,4 @@
-import GeneralError from "./GeneralError";
+import GeneralError from './GeneralError';
 export default class InvalidParameterError extends GeneralError {
     constructor(params?: any);
     add: (code: any, fieldName: any, messageParams: any) => this;

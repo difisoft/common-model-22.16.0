@@ -9,4 +9,4 @@ export default class GeneralError extends Error {
     toStatus: () => IStatus;
 }
 declare function createFromStatus(status: IStatus): GeneralError;
-export { createFromStatus, };
+export { createFromStatus };

@@ -17,7 +17,7 @@ const TIME_DISPLAY_FORMAT = 'hhmmss';
 exports.TIME_DISPLAY_FORMAT = TIME_DISPLAY_FORMAT;
 const isWeekend = (date) => {
     try {
-        return (date.getDay() === 6 || date.getDay() === 0); // 6 = Saturday, 0 = Sunday
+        return date.getDay() === 6 || date.getDay() === 0; // 6 = Saturday, 0 = Sunday
     }
     catch (e) {
         log_1.logger.error(`error on check isWeekend: ${date} - error: ${e}`);
