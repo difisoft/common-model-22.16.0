@@ -1,4 +1,4 @@
-import IStatus from '@/errors/IStatus';
+import IStatus from '@/models/IStatus';
 
 export default class GeneralError extends Error {
   public code: any;

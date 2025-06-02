@@ -1,4 +1,4 @@
-import IStatus from '@/errors/IStatus';
+import IStatus from '@/models/IStatus';
 
 export class ForwardError extends Error {
   public status: IStatus;

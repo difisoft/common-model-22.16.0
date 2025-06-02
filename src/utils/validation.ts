@@ -1,6 +1,6 @@
 import FieldRequiredError from '@/errors/FieldRequiredError';
 import InvalidParameterError from '@/errors/InvalidParameterError';
-import IParamError from '@/errors/IParamError';
+import IParamError from '@/models/IParamError';
 import { EMAIL_VALIDATION_FAILED } from '@/errors';
 import InvalidFieldValueError from '@/errors/InvalidFieldValueError';
 
