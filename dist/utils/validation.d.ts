@@ -1,5 +1,5 @@
-import InvalidParameterError from '@/errors/InvalidParameterError';
-import IParamError from '@/models/IParamError';
+import InvalidParameterError from '../errors/InvalidParameterError';
+import IParamError from '../models/IParamError';
 declare type CheckFunc<T, R> = (value: T, name: string) => IValidationResult<R>;
 declare type CheckFuncBool<T, R> = (value: T, name: string) => boolean;
 declare interface IValidationResult<R> {

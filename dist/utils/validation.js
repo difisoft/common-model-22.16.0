@@ -10,10 +10,10 @@ exports.createFailValidation = createFailValidation;
 exports.createFailFromError = createFailFromError;
 exports.createSuccessValidation = createSuccessValidation;
 exports.validatePassword = validatePassword;
-const FieldRequiredError_1 = __importDefault(require("@/errors/FieldRequiredError"));
-const InvalidParameterError_1 = __importDefault(require("@/errors/InvalidParameterError"));
-const errors_1 = require("@/errors");
-const InvalidFieldValueError_1 = __importDefault(require("@/errors/InvalidFieldValueError"));
+const FieldRequiredError_1 = __importDefault(require("../errors/FieldRequiredError"));
+const InvalidParameterError_1 = __importDefault(require("../errors/InvalidParameterError"));
+const errors_1 = require("../errors");
+const InvalidFieldValueError_1 = __importDefault(require("../errors/InvalidFieldValueError"));
 function createFailValidation(code, messageParams, paramName) {
     return {
         success: false,

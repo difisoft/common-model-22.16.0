@@ -1,4 +1,4 @@
-import IToken from '@/models/IToken';
+import IToken from '../models/IToken';
 export default interface IHeaders {
     token?: IToken;
     secToken?: IToken;

@@ -1,5 +1,5 @@
 import IStatus from "./IStatus";
-import IParamError from "@/models/IParamError";
+import IParamError from "../models/IParamError";
 export default interface IResponse {
     status?: IStatus;
     data?: any;

@@ -1,7 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.roundInt = exports.round = void 0;
-const log_1 = require("@/log");
+const log_1 = require("../log");
 const round = (input, scale = 2) => {
     if (input == null) {
         return input;
