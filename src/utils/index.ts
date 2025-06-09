@@ -36,7 +36,7 @@ import { getEnvArr, getEnvJson, getEnvNum, getEnvStr, getEnvBool } from './confi
 
 import { diffMsTime, getMsTime } from './mstime';
 
-export default {
+export {
   validate,
   validateEmail,
   validatePassword,
