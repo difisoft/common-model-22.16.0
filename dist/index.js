@@ -33,9 +33,10 @@ var __importStar = (this && this.__importStar) || (function () {
     };
 })();
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.Models = exports.logger = exports.Utils = exports.Errors = void 0;
+exports.Models = exports.configureLogger = exports.logger = exports.Utils = exports.Errors = void 0;
 const log_1 = require("./log");
 Object.defineProperty(exports, "logger", { enumerable: true, get: function () { return log_1.logger; } });
+Object.defineProperty(exports, "configureLogger", { enumerable: true, get: function () { return log_1.configure; } });
 const Errors = __importStar(require("./errors"));
 exports.Errors = Errors;
 const Utils = __importStar(require("./utils"));
