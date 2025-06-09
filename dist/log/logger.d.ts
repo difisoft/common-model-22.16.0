@@ -1,3 +1,3 @@
-import { Logger } from 'log4js';
+import { configure, Logger } from 'log4js';
 declare const logger: Logger;
-export { logger };
+export { logger, configure };
