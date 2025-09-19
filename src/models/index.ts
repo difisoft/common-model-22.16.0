@@ -1,4 +1,4 @@
-import IDataRequest from './IDataRequest';
+import IDataRequest, { IUserRequest } from './IDataRequest';
 import IHeaders from './IHeaders';
 import IParamError from './IParamError';
 import IResponse, { createSuccessResponse, createFailResponse } from './IResponse';
@@ -16,4 +16,5 @@ export {
   IAccessToken,
   IAccessTokenExtendData,
   IUserData,
+  IUserRequest,
 };
