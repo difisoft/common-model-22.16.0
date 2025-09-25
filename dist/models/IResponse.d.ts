@@ -1,9 +1,9 @@
 import IStatus from "./IStatus";
 import IParamError from "../models/IParamError";
-export default interface IResponse {
+export default interface IResponse<T> {
     status?: IStatus;
-    data?: any;
+    data?: T;
 }
-declare function createSuccessResponse(data: any): IResponse;
-declare function createFailResponse(code: string, messageParams?: string[], errors?: IParamError[]): IResponse;
+declare function createSuccessResponse<T>(data: T): IResponse<T>;
+declare function createFailResponse<T>(code: string, messageParams?: string[], errors?: IParamError[]): IResponse<T>;
 export { createSuccessResponse, createFailResponse, };

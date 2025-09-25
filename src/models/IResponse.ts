@@ -1,19 +1,19 @@
 import IStatus from "./IStatus";
 import IParamError from "@/models/IParamError";
 
-export default interface IResponse {
+export default interface IResponse<T> {
   status?: IStatus,
-  data?: any,
+  data?: T,
 }
 
-function createSuccessResponse(data: any): IResponse {
+function createSuccessResponse<T>(data: T): IResponse<T> {
   return {
     data: data,
   };
 }
 
 // noinspection JSAnnotator
-function createFailResponse(code: string, messageParams?: string[], errors?: IParamError[]): IResponse {
+function createFailResponse<T>(code: string, messageParams?: string[], errors?: IParamError[]): IResponse<T> {
   return {
     status: {
       code: code,
