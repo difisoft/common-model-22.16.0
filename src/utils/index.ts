@@ -35,6 +35,7 @@ import container from './containers';
 import { getEnvArr, getEnvJson, getEnvNum, getEnvStr, getEnvBool } from './config';
 
 import { diffMsTime, getMsTime } from './mstime';
+import { promise, handlePromise, RetryError, asyncWithRetry, allPromiseDone } from './promise';
 
 export {
   validate,
@@ -75,4 +76,9 @@ export {
   convertISO8601StringToDate,
   formatISO8601StringToDate,
   container,
+  promise,
+  handlePromise,
+  RetryError,
+  asyncWithRetry,
+  allPromiseDone,
 };
