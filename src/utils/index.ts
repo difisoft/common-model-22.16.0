@@ -37,6 +37,7 @@ import { getEnvArr, getEnvJson, getEnvNum, getEnvStr, getEnvBool } from './confi
 import { diffMsTime, getMsTime } from './mstime';
 import { promise, handlePromise, RetryError, asyncWithRetry, allPromiseDone } from './promise';
 import { convertToken, generateToken, undefinedOr } from './token';
+import { getForwardUri, IInputUri } from './scope';
 
 export {
   validate,
@@ -85,4 +86,6 @@ export {
   convertToken,
   undefinedOr,
   generateToken,
+  getForwardUri,
+  IInputUri,
 };
