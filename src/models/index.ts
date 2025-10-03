@@ -3,7 +3,7 @@ import IHeaders from './IHeaders';
 import IParamError from './IParamError';
 import IResponse, { createSuccessResponse, createFailResponse } from './IResponse';
 import IStatus from './IStatus';
-import { IAccessToken, IAccessTokenExtendData, IUserData } from './IToken';
+import IToken, { IAccessToken, IAccessTokenExtendData, IUserData } from './IToken';
 
 export {
   IDataRequest,
@@ -17,4 +17,5 @@ export {
   IAccessTokenExtendData,
   IUserData,
   IUserRequest,
+  IToken,
 };
